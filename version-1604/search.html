@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索影片-热播电影大全</title>
+  <meta name="description" content="热播电影大全搜索频道，支持按影片名称、类型、年份、地区与题材查找内容。">
+  <meta name="keywords" content="热播电影大全,热门影片在线点播,电影热度榜单,热播电影,热门片库,精选影片">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="site-nav" aria-label="主导航">
+    <a class="brand" href="./index.html" aria-label="热播电影大全">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">热播电影大全</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+    <div class="nav-panel">
+      <div class="nav-links">
+        <a class="nav-link " href="./index.html">首页</a>
+<a class="nav-link " href="./categories.html">全部分类</a>
+<a class="nav-link " href="./rankings.html">热度榜单</a>
+<a class="nav-link " href="./category-hot-picks.html">热播精选</a>
+<a class="nav-link " href="./category-new-release.html">年度新片</a>
+      </div>
+      <form class="site-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、题材或地区" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </nav>
+</header>
+<main>
+<section class="page-hero slim">
+  <span class="eyebrow">搜索</span>
+  <h1>搜索影片</h1>
+  <p>输入影片名称、地区、类型、年份或题材关键词，快速查找片库内容。</p>
+  <form class="search-page-form" action="./search.html" method="get">
+    <input id="searchInput" type="search" name="q" placeholder="输入关键词" autocomplete="off">
+    <button type="submit">搜索</button>
+  </form>
+</section>
+<section class="section-wrap">
+  <div class="section-head split">
+    <div>
+      <span class="eyebrow">搜索结果</span>
+      <h2 id="searchTitle">影片匹配</h2>
+    </div>
+    <a class="section-link" href="./categories.html">浏览分类</a>
+  </div>
+  <div id="searchResults" class="movie-grid"></div>
+</section>
+<script src="./assets/search-data.js"></script>
+<script src="./assets/search.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <a class="footer-brand" href="./index.html">热播电影大全</a>
+      <p>热门影片在线点播，精选片库与电影热度榜单同步整理。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./category-hot-picks.html">热播精选</a><a href="./category-city-love.html">都市爱情</a><a href="./category-costume-fantasy.html">古装奇幻</a><a href="./category-suspense-crime.html">悬疑犯罪</a><a href="./category-comedy-life.html">喜剧轻松</a><a href="./category-action-adventure.html">动作冒险</a>
+      <a href="./rankings.html">热度榜单</a>
+    </div>
+  </div>
+  <p class="copyright">© 2026 热播电影大全 · 热门影片在线点播 · 电影热度榜单</p>
+</footer>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
